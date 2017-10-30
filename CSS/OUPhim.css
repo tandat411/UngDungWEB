@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* body */
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#333;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+/* CSS HEADER */
+div.container{
+	background-color:#007eed;
+}
+div.Header{
+	width:70%;
+	overflow:hidden;
+	height:125px;
+	margin:0 auto;
+}
+div.Header span{
+	padding-left:3px;
+}
+/* logo */
+div.logo{
+	float:left;
+	padding-right:70px;	
+}
+div.logo img{
+	width:320px;
+	height:120px;	
+}
+/* search*/
+div.search{
+	float:left;
+	margin-top:52px;
+}
+div.search input{
+	width:250px;
+	height:36px;
+	border-radius:12px;
+	padding-left:5px;
+	font-size:16px;
+	font-weight:bold;
+}
+div.search button{
+	width:100px;
+	height:40px;
+	background-color:#006;
+	color:#FFF;
+	border:none;
+	font-weight:bold;
+}
+div.search button:active{
+	border:3px solid white;
+}
+/* control */
+div.control{
+	padding-top:52px;
+}
+div.control a img{
+	width:19px;
+	height:17px;
+	padding-right:5px;
+}
+div.control > a{
+	background-color:#FC3;
+	width:120px;
+	color:#000;
+	height:27px;
+	padding:5px 5px;
+	text-align:center;
+	float:right;
+	margin-right:5px;
+	padding-top:9px;
+	border-radius:5px;
+}
+div.control a:hover{
+	background-color:#F60;
+}
+div.control a:active{
+	border:3px solid white;
+}
+/* CSS MENU */
+div.menu{
+	background-color:#63C;
+	overflow:hidden;
+	width:70%;
+	margin:5px auto;
+}
+div.menu ul{
+	list-style-type:none;
+	float:left;
+	padding:0;
+	margin:0;
+}
+div.menu a.listMenu{
+	display:block;
+	color:white;
+	padding:10px 30px;
+	border-right:1px solid white;
+	text-align:center;
+}
+div.menu ul.list > li:last-child a.listMenu{
+	border-right:none;
+	width:203px;
+}
+div.menu li{
+	float:left;
+}
+ul.listItem{
+	display:none;
+	font-size:16px;
+	border:none;
+	width:400px;
+	background:rgba(102,51,255,0.5);
+	border-radius:5px;
+	position: relative;
+}
+div.menu li:hover ul.listItem{
+	display:block;
+	border:1px solid white;
+	position:absolute;
+}
+ul.listItem > li{
+	width:170px;
+	padding:10px 15px;
+}
+ul.listItem > li:hover a{
+	color:#FC3;
+}
+ul.listItem > li > a{
+	color:white;
+}
+/* CSS ADS */
+div.ads div{
+	position:fixed;
+	text-transform:uppercase;
+	border-radius:5px;
+	background-color:#FFF;
+	text-align:center;
+	width:13%;
+	height:450px;
+	padding-top:245px;
+}
+div.ads > div.ads-left{
+	left:1%;
+}
+div.ads > div.ads-right{
+	right:1%;
+	
+}
+/* CSS FOOTER */
+div.footer{
+	position:absolute;
+	background-color:#007eed;
+	left:0;
+	right:0;
+	bottom:0;
+}
+div.footer h1{
+	font-size:50px;
+	font-weight:bold;
+	margin:0;
+}
+div.footer div.gioi-thieu{
+	width:70%;
+	margin:0 auto;
+}
+div.footer div.left{
+	width:450px;
+	float:left;
+}
+div.footer div.left a > img{
+	width:25px;
+	height:25px;
+}
+div.footer div.right{
+	float:right;
+	padding:10px;
+}
+div.footer div.right p{
+	margin:0;
+	font-weight:bold;
+	text-align:center;
+}
+/* CSS BODY */
+div.body{
+	width:70%;
+	margin: 5px auto;
+	border:1px solid white;
+	color:white;
+	background-color:black;
+}
