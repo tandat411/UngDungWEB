@@ -7,6 +7,7 @@ body{
 }
 a{
 	text-decoration:none;
+	color:white;
 }
 
 /* CSS BODY */
@@ -114,7 +115,6 @@ div.menu ul{
 }
 div.menu a.listMenu{
 	display:block;
-	color:white;
 	padding:8px 24px;
 	border-right:1px solid white;
 	text-align:center;
@@ -147,10 +147,10 @@ ul.listItem > li{
 ul.listItem > li:hover a{
 	color:#FC3;
 }
+
 ul.listItem > li > a{
 	color:white;
 }
-
 /* CSS ADS */
 div.ads div{
 	position:fixed;
@@ -199,9 +199,20 @@ div.footer div.left a > img{
 	width:25px;
 	height:25px;
 }
+div.footer div.left a:hover > img{
+	opacity:0.8;
+	border:1px solid;
+}
 div.footer div.right{
 	float:right;
 	padding:10px;
+}
+div.footer div.right a{
+	color:#FC0;
+	text-decoration:underline;
+}
+div.footer div.right a:hover{
+	color:red;
 }
 div.footer div.right p{
 	margin:0;
@@ -209,4 +220,137 @@ div.footer div.right p{
 	text-align:center;
 }
 
+/* CSS BODY */
+div.body{
+	width:70%;
+	margin: 20px auto;
+	color:white;
+	height:2600px;
+}
+div.body ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+-->Slider
+div.slider{
+	height:400px;
+}
+div.slider ul li a{
+	display:block;
+}
+div.slider ul li img{
+	width:100%;
+	height:400px;
+	background-size:cover;
+}
+div.picControl img{
+	width:50px;
+	height:55px;
+}
+div.picControl{
+	width:70%;
+	line-height:400px;
+	position:absolute;
+}
+div.picControl button{
+	padding:0;
+	opacity:0.6;
+	background-color:transparent;
+	border:none;
+}
+div.picControl div.back{
+	float:left;
+	padding-left:5px;
+}
+div.picControl div.next{
+	float:right;
+	padding-right:5px;
+}
+div.body picControl{
+	size:20px 20px;
+	color:white;
+	position:absolute;
+}
+-->list phim
+div.listItem{
+	position:relative;
+	overflow:hidden;
+}
+div.listItem div.title{
+	position:relative;
+	background-color:#63C;
+	overflow:hidden;
+	width:100%;
+	height:50px;
+	border-bottom:2px solid;
+	border-top:2px solid;
+	margin-top:5px;
+}
+div.listItem div.title h2{
+	margin:0;
+	text-transform:uppercase;
+	float:left;
+	line-height:50px;
+}
+div.listItem div.title > img{
+	width:20px;
+	height:20px;
+	float:left;
+	padding: 15px 10px;
+}
+div.listItem div.title > a{
+	float:right;
+	line-height:50px;
+	padding-right:15px;
+}
+div.listItem div.title > a:hover{
+	text-decoration:underline;
+}
+div.listItem ul{
+	list-style-type:none;
+}
 
+div.listItem ul li{
+	margin:0;
+	padding:25px 15px;
+	width:204px;
+	height:350px;
+	float:left;
+}
+div.listItem ul li img{
+	width:200px;
+	height:300px;
+	background-size:cover;
+}
+div.listItem li h4,h5,p{
+	margin:0;
+	padding-top:2px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+div.listItem li h4{
+	text-transform:uppercase;
+	color:#FC0;
+}
+div.listItem li h5{
+	color:#FFF;
+}
+div.listItem li p{
+	padding-top:10px;
+	color:#999;
+	font-size:12px;
+}
+div.listItem li.col a{
+	display:block;
+	background-color:#000;
+	border-bottom:2px solid #666;
+	padding:2px;
+}
+div.listItem li.col a:hover img{
+	opacity:0.8;
+}
+div.listItem li.col a:hover div.details > h5{
+	color:#F33;
+}
