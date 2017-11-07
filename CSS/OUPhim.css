@@ -8,6 +8,11 @@ body{
 a{
 	text-decoration:none;
 }
+
+/* CSS BODY */
+
+
+
 /* CSS HEADER */
 @media screen and (max-width: 1280px){
 	div.container {
@@ -30,6 +35,7 @@ div.Header{
 div.Header span{
 	padding-left:3px;
 }
+
 /* logo */
 div.logo{
 	float:left;
@@ -39,6 +45,7 @@ div.logo img{
 	width:300px;
 	height:100px;	
 }
+
 /* search*/
 div.search{
 	float:left;
@@ -64,6 +71,7 @@ div.search button{
 div.search button:active{
 	border:3px solid white;
 }
+
 /* control */
 div.control{
 	padding-top:35px;
@@ -90,6 +98,7 @@ div.control a:hover{
 div.control a:active{
 	border:3px solid white;
 }
+
 /* CSS MENU */
 div.menu{
 	background-color:#63C;
@@ -141,6 +150,7 @@ ul.listItem > li:hover a{
 ul.listItem > li > a{
 	color:white;
 }
+
 /* CSS ADS */
 div.ads div{
 	position:fixed;
@@ -159,6 +169,7 @@ div.ads > div.ads-right{
 	right:1%;
 	
 }
+
 /* CSS FOOTER */
 div.footer{
 	overflow:hidden;
@@ -178,7 +189,7 @@ div.footer div.gioi-thieu{
 	margin:0 auto;
 }
 div.footer div.left{
-	width:330px;
+	width:230px;
 	float:left;
 }
 div.footer div.left p{
@@ -197,11 +208,5 @@ div.footer div.right p{
 	font-weight:bold;
 	text-align:center;
 }
-/* CSS BODY */
-div.body{
-	width:70%;
-	margin: 5px auto;
-	border:1px solid white;
-	color:white;
-	background-color:black;
-}
+
+
