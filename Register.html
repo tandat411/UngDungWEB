@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>OU Phim</title>
 <link href="CSS/OUPhim.css" rel="stylesheet">
+<link href="CSS/Register.css" rel="stylesheet">
 </head>
 
 <body>
@@ -88,20 +89,63 @@
            <li class="cinema"><a class="listMenu" href="#">PHIM CHIẾU RẠP</a></li>
          </ul>
 	</div>
-    <div class="ads">
-        <div class="ads-left">liên hệ quảng cáo</div>
-        <div class="ads-right">liên hệ quảng cáo</div>
-    </div>
+    
     <div class="body">
-    	
-        
-        
-        
-        
-        
-        
-        
+    	<div class = "form">
+        	<div class = "form header">
+            	<h3><a href="OUPhim.html">OU Phim</a> / Đăng ký tài khoản</h3>
+            </div>
+            <div class ="form-content">
+            	<div class="form-content0">
+                	<a href="https://www.facebook.com/"><img src="Images/icon/fb.png" style ="width:210px; height:50px;" alt="Đăng nhập với FB.jpg"/></a>
+                </div>
+                <div class = "form- content1">
+                	 <span>Tài khoản</span>
+                     <input style="margin-left:60px;" type="text" placeholder="Tài khoản" id="taikhoan">
+                </div>
+                <div class ="form- content2">
+                	<span>Mật khẩu</span>
+                    <input style="margin-left:65px;" type="password" id="matkhau" placeholder="********">
+                </div>
+                <div class ="form- content3">
+                	<span>Nhập lại mật khẩu</span>
+                    <input  style="margin-left: 2px;" type="password" id="matkhau_again" placeholder="********">
+                </div>
+                <div class ="form- content4">
+                	<span>Họ tên</span>
+                    <input style="margin-left:84px;" type="text" id="hoten" placeholder="Họ tên">
+                </div>
+                <div class ="form- content5">
+                	<span>Giới tính</span>
+                    <select style="margin-left:69px;" name="sex" style="background-color:#999">
+                    	<option value="Nam">Nam</option>
+                      	<option value="Nữ">Nữ</option>
+                    </select>
+                </div>
+                <div class ="form- content6">
+                	<span>Email</span>
+                    <input style="margin-left:91px;" type="email" id="mail" placeholder="Email"/>
+                </div>
+                <div class ="form- content7">
+                	<span>Ngày sinh</span>
+                    <input style="margin-left:59px;" type="date" id="birthday" placeholder="__/__/____" />
+                </div>
+                <div class ="form- content8">
+                	<span>Địa chỉ</span>
+                    <input style="margin-left:82px;" type="text" id="diachi" placeholder="81 Trần Hưng Đạo P.1 Q.5"/>
+                </div>
+                <div class ="form- content9">
+                	<span>Số đt</span>
+                    <input style="margin-left:93px;" type="text" id="dienthoai" placeholder="0932151***"/>
+                </div>
+            </div>
+            <div class = "form-footer">
+            	<input type="button" value="Đăng kí">
+                <h4>Bạn đã có tài khoản ? <a href="">Đăng nhập</a></h4>
+            </div> 
+        </div>
     </div>
+    
     <div class="footer">
         <div class="gioi-thieu">
         	<div class="left">
@@ -121,6 +165,8 @@
             </div>
         </div>
 	</div>
+    
+    
 </div>
 </body>
 </html>
