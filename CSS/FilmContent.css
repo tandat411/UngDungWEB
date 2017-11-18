@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+div.body{
+	height:1300px;
+}
+div.FilmContent{
+	background-color:#484848;
+	width:100%;
+	height:600px;
+	padding:0;
+	margin-top:-15px;
+}
+div.FilmContent > div.header{
+	height:27.25px;
+	padding: 1px 0;	
+	margin-bottom:2px;
+}
+div.content > div.poster > a > img{
+	width:350px;
+	height:430px;
+	float:left;	
+}
+/*Tiêu đề top - tooltip*/
+ul.top > li{
+	float:left;
+	display:inline;
+	line-height:30px;
+	margin-left:20px;
+	margin-right:1px;
+	position:relative;
+	font-size:20px;
+}
+ul.top > li:first-child{
+	margin-left:0;	
+}
+.tooltip:before{
+	content:" ";
+	border-width:16px;
+	border-style:solid;
+	border-color:transparent transparent transparent white;
+	position:absolute;
+	top:5%;
+	left:100%;
+	z-index:1;
+	margin-top:-3px;
+	margin-left:0;
+}
+.tooltip:after{
+	content:" ";
+	color:#6FF;
+	border-width:16px;
+	border-style:solid;
+	border-color:transparent transparent transparent #484848;
+	position:absolute;
+	top:5%;
+	left:100%;
+	z-index:2;
+	margin-top:-3px;
+	margin-left:-1px;
+}
+.tooltip:hover{
+	background:#262626;
+	color:#6FF;
+}
+.tooltip:hover::before{
+	border-left:16px solid white;
+}
+.tooltip:hover::after{
+	border-left:16px solid #262626;
+	color:#6FF;
+}
+
+
+/*Viết nội dung*/
+div.describe{
+	max-width:450px;
+	margin-left:40%;
+
+}
+div.describe > ul.meta-data{
+	margin-top:20px;	
+}
+div.describe > ul.meta-data > li{
+	margin:2px;	
+}
+div.describe > ul.meta-data > li > strong{
+	color:#0374F1;
+	word-spacing:2px;	
+}
+div.describe > h1,h2{
+	margin:0;	
+}
+
+ul.center> li > a.down > img{
+	width:100px;
+	height:40px;
+	float:left;
+	margin-left:-285px;
+	margin-top:390px;	
+	border-radius: 5px;
+}
+ul.center > li > a.play > img{
+	width:100px;
+	height:40px;
+	float:left;
+	margin-left:-180px;
+	margin-top:390px;
+	border-radius: 5px;
+}
+ul.center> li > a.down > img:hover{
+	-webkit-filter: contrast(180%);
+	filter: contrast(180%);
+
+}
+ul.center > li > a.play > img:hover{
+	-webkit-filter: contrast(180%);
+	filter: contrast(180%);
+}
+
+
+div.FilmContent-footer > div.sumaries{	
+	margin-top:165px;
+	height:580px;
+	background:#484848;
+}
+div.FilmContent-footer > div.sumaries > div.decoration-topic > h2{
+	background:#466079;
+	padding: 3px 15px;
+}
+div.FilmContent-footer > div.sumaries > h4{
+	text-indent:30px;
+	margin-left:10px;
+	word-spacing:3px;	
+}
+div.tag > h2{
+	background:#466079;
+	padding: 3px 15px;	
+	margin-bottom:10px;
+}
+/*Tooltip*/
+div.FilmContent > div.header > .tooltip-{
+	background:#00C;	
+}
+div.FilmContent > div.header > .tooltip-:after{
+
+}
