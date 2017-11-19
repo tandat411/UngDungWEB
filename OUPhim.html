@@ -7,9 +7,15 @@
 <link href="CSS/OUPhim.css" rel="stylesheet">
 <script src="jQuery/jquery-3.2.1.min.js"></script>
 <script src="JavaScript/OUPhim.js"></script>
+<script src="JavaScript/WindowScroll.js"></script>
+
 </head>
 
 <body>
+<div class="backTop">
+	<button id="topID"><img src="Images/icon/backtotop.png" alt="Top"/></button>
+	<span class="bttooltip">Back to Top</span>
+</div>
 <div class="container">
 	<div class="colorHead">
         <div class="Header">
@@ -25,17 +31,17 @@
                 </button>
             </div>
             <div class="control">
-                <a class="register" href="#">
+                <a class="register" href="Register.html">
                     <img src="Images/icon/add.png">Đăng ký
                 </a>
-                <a class="login" href="#">
+                <a class="login" href="Login.html">
                     <img src="Images/icon/login.png">Đăng nhập
                 </a>
             </div>
         </div>
        </div>
     <div class="menu">
-         <ul class="list">
+         <ul class="list" id="menuID">
             <li class="type">
             <a class="listMenu" href="#">THỂ LOẠI </a>
                 <ul class="listItem">
@@ -91,8 +97,8 @@
          </ul>
 	</div>
     <div class="ads">
-        <div class="ads-left">liên hệ quảng cáo</div>
-        <div class="ads-right">liên hệ quảng cáo</div>
+        <div class="ads-left" id="adsIDleft">liên hệ quảng cáo</div>
+        <div class="ads-right" id="adsIDright">liên hệ quảng cáo</div>
     </div>
     <div class="body">
     	<div class="slider">
@@ -101,12 +107,12 @@
                 <div class="next"><button id="nextID"><img src="Images/icon/next.png"/></button></div>
             </div>
             <ul id="sliderID">
-                <li id="0"><a href="#"><img src="Images/Film/background/IT-backgound.jpg"/></a></li>
-                <li id="1"><a href="#"><img src="Images/Film/background/spider-background.jpg"/></a></li>
-                <li id="2"><a href="#"><img src="Images/Film/background/Car3-background.png"/></a></li>
-                <li id="3"><a href="#"><img src="Images/Film/background/guard2-background.jpg"/></a></li>
-                <li id="4"><a href="#"><img src="Images/Film/background/Annabelle2-background.jpg"/></a></li>
-                <li id="5"><a href="#"><img src="Images/Film/background/thor3-background.jpg"/></a></li>
+                <li id="0"><a href="FilmContent.html"><img src="Images/Film/background/IT-backgound.jpg"/></a></li>
+                <li id="1"><a href="FilmContent.html"><img src="Images/Film/background/spider-background.jpg"/></a></li>
+                <li id="2"><a href="FilmContent.html"><img src="Images/Film/background/Car3-background.png"/></a></li>
+                <li id="3"><a href="FilmContent.html"><img src="Images/Film/background/guard2-background.jpg"/></a></li>
+                <li id="4"><a href="FilmContent.html"><img src="Images/Film/background/Annabelle2-background.jpg"/></a></li>
+                <li id="5"><a href="FilmContent.html"><img src="Images/Film/background/thor3-background.jpg"/></a></li>
             </ul>
         </div>
         <div class="listItem">
@@ -117,7 +123,7 @@
             </div>
         	<ul>
             	<li class="col col1">
-                	<a href="#" title="Quái nhân Deadpool 2 - Deadpool 2">
+                	<a href="FilmContent.html" title="Quái nhân Deadpool 2 - Deadpool 2">
                     	<div><img src="Images/Film/poster/deadpool_2-poster.jpg"/></div>
                         <div class="details">
                         	<h4><strong>Quái nhân Deadpool 2</strong></h4>
@@ -127,7 +133,7 @@
                     </a>
                 </li>
                 <li class="col col2">
-                	<a href="#" title="Thần sấm 3: thời khắc tận thế - Thor 3: Ragnarok">
+                	<a href="FilmContent.html" title="Thần sấm 3: thời khắc tận thế - Thor 3: Ragnarok">
                     	<div><img src="Images/Film/poster/thor3-poster.jpg"/></div>
                         <div class="details">
                         	<h4><strong>Thần Sấm 3: Thời Khắc Tận thế</strong></h4>
@@ -137,7 +143,7 @@
                     </a>
                 </li>
                 <li class="col col3">
-                	<a href="#" title="Siêu đại chiến Thái Bình Dương 2: Cuộc nổi dậy - Pacific Rim 2: Uprising">
+                	<a href="FilmContent.html" title="Siêu đại chiến Thái Bình Dương 2: Cuộc nổi dậy - Pacific Rim 2: Uprising">
                     	<img src="Images/Film/poster/pacificRim2-poster.jpg"/>
                     	<div class="details">
                         	<h4><strong>Siêu đại chiến Thái Bình Dương 2: Cuộc nổi dậy</strong></h4>
@@ -147,7 +153,7 @@
                     </a>
                 </li>
                 <li class="col col4">
-                	<a href="#" title="Báo Đen - Black Panther">
+                	<a href="FilmContent.html" title="Báo Đen - Black Panther">
                     	<div><img src="Images/Film/poster/blackPanther-poster.jpg"/></div>
                     	<div class="details">
                         	<h4><strong>Báo Đen</strong></h4>
@@ -157,7 +163,7 @@
                     </a>
                 </li>
                 <li class="col col5">
-                	<a href="#" title="Liên Minh Công Lý - Justice League">
+                	<a href="FilmContent.html" title="Liên Minh Công Lý - Justice League">
                     	<div><img src="Images/Film/poster/justice_league-poster.jpg"/></div>
                         <div class="details">
                         	<h4><strong>Liên Minh Công Lý</strong></h4>
@@ -167,7 +173,7 @@
                     </a>
                 </li>
                 <li class="col col6">
-                	<a href="#" title="Haunted Hotel - Khách Sạn Ma">
+                	<a href="FilmContent.html" title="Haunted Hotel - Khách Sạn Ma">
                     	<div><img src="Images/Film/poster/HauntedHotel-poster.jpg"/></div>
                     	<div class="details">
                         	<h4><strong>Khách Sạn Ma</strong></h4>
@@ -177,7 +183,7 @@
                     </a>
                 </li>
                 <li class="col col7">
-                	<a href="#" title="Star Wars: Jedi Cuối Cùng - Star Wars: The Last Jedi">
+                	<a href="FilmContent.html" title="Star Wars: Jedi Cuối Cùng - Star Wars: The Last Jedi">
                     	<div><img src="Images/Film/poster/StarWar-poster.jpg"/></div>
                     	<div class="details">
                         	<h4><strong>Star Wars: Jedi Cuối Cùng</strong></h4>
@@ -187,7 +193,7 @@
                     </a>
                 </li>
                 <li class="col col8">
-                	<a href="#" title="Coco - Coco">
+                	<a href="FilmContent.html" title="Coco - Coco">
                     	<div><img src="Images/Film/poster/Coco-poster.jpg"/></div>
                     	<div class="details">
                         	<h4><strong>Coco</strong></h4>
@@ -200,11 +206,11 @@
             <div class="title">
             	<img src="Images/icon/item.png" alt="item"/>
         		<h2>phim nổi bật</h2>
-                <a href="#">Xem tất cả >></a>
+                <a href="FilmContent.html">Xem tất cả >></a>
             </div>
         	<ul>
             	<li class="col col1">
-                	<a href="#" title="Kẻ ngoại tộc - The Foreigner">
+                	<a href="FilmContent.html" title="Kẻ ngoại tộc - The Foreigner">
                     	<div><img src="Images/Film/poster/TheForeigner-poster.jpg"/></div>
                         <div class="details">
                         	<h4><strong>Kẻ ngoại tộc</strong></h4>
@@ -214,7 +220,7 @@
                     </a>
                 </li>
                 <li class="col col2">
-                	<a href="#" title="Câu Chuyện Lý Tiểu Long: Sự Ra Đời Của Rồng - Birth of the Dragon">
+                	<a href="FilmContent.html" title="Câu Chuyện Lý Tiểu Long: Sự Ra Đời Của Rồng - Birth of the Dragon">
                     	<div><img src="Images/Film/poster/BoB-poster.jpg"/></div>
                         <div class="details">
                         	<h4><strong>Câu Chuyện Lý Tiểu Long: Sự Ra Đời Của Rồng</strong></h4>
@@ -224,7 +230,7 @@
                     </a>
                 </li>
                 <li class="col col3">
-                	<a href="#" title="Vương Quốc Xe Hơi 3 - Cars 3">
+                	<a href="FilmContent.html" title="Vương Quốc Xe Hơi 3 - Cars 3">
                     	<img src="Images/Film/poster/Car3-poster.jpg"/>
                     	<div class="details">
                         	<h4><strong>Vương Quốc Xe Hơi 3</strong></h4>
@@ -234,7 +240,7 @@
                     </a>
                 </li>
                 <li class="col col4">
-                	<a href="#" title="Nỗi ám ảnh kinh hoàng 2 - The Conjuring 2: The Enfield Poltergeist">
+                	<a href="FilmContent.html" title="Nỗi ám ảnh kinh hoàng 2 - The Conjuring 2: The Enfield Poltergeist">
                     	<div><img src="Images/Film/poster/TheConjuring2-poster.jpg"/></div>
                     	<div class="details">
                         	<h4><strong>The Conjuring 2: The Enfield Poltergeist</strong></h4>
@@ -244,7 +250,7 @@
                     </a>
                 </li>
                 <li class="col col5">
-                	<a href="#" title="Búp bê ma ám 2: Tạo vật quỷ dữ - Annabelle 2: Creation">
+                	<a href="FilmContent.html" title="Búp bê ma ám 2: Tạo vật quỷ dữ - Annabelle 2: Creation">
                     	<div><img src="Images/Film/poster/Annabelle2-poster.jpg"/></div>
                         <div class="details">
                         	<h4><strong>Búp bê ma ám 2: Tạo vật quỷ dữ</strong></h4>
@@ -254,7 +260,7 @@
                     </a>
                 </li>
                 <li class="col col6">
-                	<a href="#" title="Kẻ Trộm Mặt Trăng 3 - Despicable Me 3">
+                	<a href="FilmContent.html" title="Kẻ Trộm Mặt Trăng 3 - Despicable Me 3">
                     	<div><img src="Images/Film/poster/DiscapleMe3-poster.jpg"/></div>
                     	<div class="details">
                         	<h4><strong>Kẻ Trộm Mặt Trăng 3</strong></h4>
@@ -264,7 +270,7 @@
                     </a>
                 </li>
                 <li class="col col7">
-                	<a href="#" title="Chú Hề Ma Quái - IT">
+                	<a href="FilmContent.html" title="Chú Hề Ma Quái - IT">
                     	<div><img src="Images/Film/poster/IT-poster.png"/></div>
                     	<div class="details">
                         	<h4><strong>Chú Hề Ma Quái</strong></h4>
@@ -274,7 +280,7 @@
                     </a>
                 </li>
                 <li class="col col8">
-                	<a href="#" title="Người Nhện: Trở Về Nhà - Spider-man: Homecoming">
+                	<a href="FilmContent.html" title="Người Nhện: Trở Về Nhà - Spider-man: Homecoming">
                     	<div><img src="Images/Film/poster/spider-poster.jpg"/></div>
                     	<div class="details">
                         	<h4><strong>Người Nhện: Trở Về Nhà</strong></h4>
@@ -284,7 +290,7 @@
                     </a>
                 </li>
                 <li class="col col9">
-                	<a href="#" title="Vệ binh dải ngân hà 2 - Guardians of the Galaxy Vol. 2">
+                	<a href="FilmContent.html" title="Vệ binh dải ngân hà 2 - Guardians of the Galaxy Vol. 2">
                     	<div><img src="Images/Film/poster/guard2-poster.jpg"/></div>
                     	<div class="details">
                         	<h4><strong>Vệ binh dải ngân hà 2</strong></h4>
@@ -294,7 +300,7 @@
                     </a>
                 </li>
                 <li class="col col10">
-                	<a href="#" title="Đội quân cảm xúc - The Emoji Movie">
+                	<a href="FilmContent.html" title="Đội quân cảm xúc - The Emoji Movie">
                     	<div><img src="Images/Film/poster/emoji-poster.jpg"/></div>
                     	<div class="details">
                         	<h4><strong>Đội quân cảm xúc</strong></h4>
@@ -304,7 +310,7 @@
                     </a>
                 </li>
                 <li class="col col11">
-                	<a href="#" title="Nữ Thần Chiến Binh - Wonder Woman">
+                	<a href="FilmContent.html" title="Nữ Thần Chiến Binh - Wonder Woman">
                     	<div><img src="Images/Film/poster/wonderwoman-poster.jpg"/></div>
                     	<div class="details">
                         	<h4><strong>Nữ Thần Chiến Binh</strong></h4>
@@ -314,7 +320,7 @@
                     </a>
                 </li>
                 <li class="col col12">
-                	<a href="#" title="Lưỡi Cưa 8: Di Sản Để Lại - Jigsaw">
+                	<a href="FilmContent.html" title="Lưỡi Cưa 8: Di Sản Để Lại - Jigsaw">
                     	<div><img src="Images/Film/poster/jigSaw-poster.jpg"/></div>
                     	<div class="details">
                         	<h4><strong>Lưỡi Cưa 8: Di Sản Để Lại</strong></h4>

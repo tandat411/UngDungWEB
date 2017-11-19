@@ -5,9 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>OU Phim</title>
 <link href="CSS/OUPhim.css" rel="stylesheet">
+<link href="CSS/Login.css" rel="stylesheet">
+<script src="jQuery/jquery-3.2.1.min.js"></script>
+<script src="JavaScript/WindowScroll.js"></script>
 </head>
 
 <body>
+<div class="backTop">
+	<button id="topID"><img src="Images/icon/backtotop.png" alt="Top"/></button>
+	<span class="bttooltip">Back to Top</span>
+</div>
 <div class="container">
 	<div class="colorHead">
         <div class="Header">
@@ -23,85 +30,107 @@
                 </button>
             </div>
             <div class="control">
-                <a class="register" href="#">
+                <a class="register" href="Register.html">
                     <img src="Images/icon/add.png">Đăng ký
                 </a>
-                <a class="login" href="#">
+                <a class="login" href="Login.html">
                     <img src="Images/icon/login.png">Đăng nhập
                 </a>
             </div>
         </div>
        </div>
     <div class="menu">
-         <ul class="list">
+        <ul class="list" id="menuID">
             <li class="type">
-            <a class="listMenu" href="#">THỂ LOẠI </a>
+            <a class="listMenu" href="OUPhim.html">THỂ LOẠI </a>
                 <ul class="listItem">
-                    <li><a href="#">Võ Thuật-Cổ Trang</a></li>
-                    <li><a href="#">Hành Động</a></li>
-                    <li><a href="#">Tình Cảm</a></li>
-                    <li><a href="#">Hoạt Hình</a></li>
-                    <li><a href="#">Hài Hước</a></li>  
-                    <li><a href="#">Tâm Lý 18+</a></li>
+                    <li><a href="OUPhim.html">Võ Thuật-Cổ Trang</a></li>
+                    <li><a href="OUPhim.html">Hành Động</a></li>
+                    <li><a href="OUPhim.html">Tình Cảm</a></li>
+                    <li><a href="OUPhim.html">Hoạt Hình</a></li>
+                    <li><a href="OUPhim.html">Hài Hước</a></li>  
+                    <li><a href="OUPhim.html">Tâm Lý 18+</a></li>
                 </ul>
             </li>
             <li class="country">
-                <a class="listMenu" href="#">QUỐC GIA</a>
+                <a class="listMenu" href="OUPhim.html">QUỐC GIA</a>
                 <ul class="listItem">
-                    <li><a href="#">Việt Nam</a></li>
-                    <li><a href="#">Hồng Kông</a></li>
-                    <li><a href="#">Ấn Độ</a></li>
-                    <li><a href="#">Trung Quốc</a></li>
-                    <li><a href="#">Thái Lan</a></li>  
-                    <li><a href="#">Âu-Mỹ</a></li>
-                    <li><a href="#">Hàn Quốc</a></li>  
-                    <li><a href="#">Quốc gia khác</a></li>
+                    <li><a href="OUPhim.html">Việt Nam</a></li>
+                    <li><a href="OUPhim.html">Hồng Kông</a></li>
+                    <li><a href="OUPhim.html">Ấn Độ</a></li>
+                    <li><a href="OUPhim.html">Trung Quốc</a></li>
+                    <li><a href="OUPhim.html">Thái Lan</a></li>  
+                    <li><a href="OUPhim.html">Âu-Mỹ</a></li>
+                    <li><a href="OUPhim.html">Hàn Quốc</a></li>  
+                    <li><a href="OUPhim.html">Quốc gia khác</a></li>
                </ul>
             </li>
             <li class="phim-le">
-                <a class="listMenu" href="#">PHIM LẺ</a>
+                <a class="listMenu" href="OUPhim.html">PHIM LẺ</a>
                 <ul class="listItem">
-                    <li><a href="#">Phim lẻ Việt Nam</a></li>
-                    <li><a href="#">Phim lẻ Hồng Kông</a></li>
-                    <li><a href="#">Phim lẻ Ấn Độ</a></li>
-                    <li><a href="#">Phim lẻ Trung Quốc</a></li>
-                    <li><a href="#">Phim lẻ Thái Lan</a></li>  
-                    <li><a href="#">Phim lẻ Âu-Mỹ</a></li>
-                    <li><a href="#">Phim lẻ Hàn Quốc</a></li>  
-                    <li><a href="#">Phim lẻ Quốc gia khác</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Việt Nam</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Hồng Kông</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Ấn Độ</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Trung Quốc</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Thái Lan</a></li>  
+                    <li><a href="OUPhim.html">Phim lẻ Âu-Mỹ</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Hàn Quốc</a></li>  
+                    <li><a href="OUPhim.html">Phim lẻ Quốc gia khác</a></li>
                </ul>
             </li>
             <li class="phim-bo">
-                <a class="listMenu" href="#">PHIM BỘ</a>
+                <a class="listMenu" href="OUPhim.html">PHIM BỘ</a>
                 <ul class="listItem">
-                    <li><a href="#">Phim bộ Việt Nam</a></li>
-                    <li><a href="#">Phim bộ Hồng Kông</a></li>
-                    <li><a href="#">Phim bộ Ấn Độ</a></li>
-                    <li><a href="#">Phim bộ Trung Quốc</a></li>
-                    <li><a href="#">Phim bộ Thái Lan</a></li>  
-                    <li><a href="#">Phim bộ Âu-Mỹ</a></li>
-                    <li><a href="#">Phim bộ Hàn Quốc</a></li>  
-                    <li><a href="#">Phim bộ Quốc gia khác</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Việt Nam</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Hồng Kông</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Ấn Độ</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Trung Quốc</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Thái Lan</a></li>  
+                    <li><a href="OUPhim.html">Phim bộ Âu-Mỹ</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Hàn Quốc</a></li>  
+                    <li><a href="OUPhim.html">Phim bộ Quốc gia khác</a></li>
                </ul>
             </li>
-           <li class="sub"><a class="listMenu" href="#">PHIM THUYẾT MINH</a></li>
-           <li class="cinema"><a class="listMenu" href="#">PHIM CHIẾU RẠP</a></li>
+           <li class="sub"><a class="listMenu" href="OUPhim.html">PHIM THUYẾT MINH</a></li>
+           <li class="cinema"><a class="listMenu" href="OUPhim.html">PHIM CHIẾU RẠP</a></li>
          </ul>
 	</div>
     <div class="ads">
-        <div class="ads-left">liên hệ quảng cáo</div>
-        <div class="ads-right">liên hệ quảng cáo</div>
+        <div class="ads-left" id="adsIDleft">liên hệ quảng cáo</div>
+        <div class="ads-right" id="adsIDright">liên hệ quảng cáo</div>
     </div>
     <div class="body">
-    	
-        
-        
-        
-        
-        
-        
-        
+    	<div class="login">
+        	<div class="path">
+                <ul>
+                    <li><a href="OUPhim.html">Trang chủ</a></li>
+                    <li><a href="#">Đăng nhập</a></li>
+                </ul>
+        	</div>
+            <hr>
+            <div class="login-content">
+            
+            	<div class="login-content0">
+                	<a href="https://www.facebook.com/"><img src="Images/icon/fb.png" alt="Đăng nhập với FB.jpg"/></a>
+                </div>
+            	<div class="login-content1">
+                    <span>Tài khoản</span>
+                    <input type="email" id = "TaiKhoanID" placeholder="ou.phim@gmail.com"/>
+                </div>
+                <div class ="login-content2">
+                	<span>Mật khẩu&#160;</span>
+                    <input type="password" id = "MauKhauID" placeholder="******"/>
+                    <input type="checkbox" id="btChecked" /> Ghi Nhớ
+                </div>
+            </div>
+            <div class="login-footer">
+            	<input type="button" value="Đăng nhập" id="DangNhapID">
+                <input type="button" value="Quên mật khẩu" id="QuenMatKhauID">
+                <h5>Bạn chưa có tài khoản ? <a href="Register.html" style="color:#FF0;">Đăng kí</a></h5>
+            </div>
+        </div>    
     </div>
+     
     <div class="footer">
         <div class="gioi-thieu">
         	<div class="left">

@@ -5,9 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>OU Phim</title>
 <link href="CSS/OUPhim.css" rel="stylesheet">
+<link href="CSS/FilmContent.css" rel="stylesheet">
+<script src="jQuery/jquery-3.2.1.min.js"></script>
+<script src="JavaScript/WindowScroll.js"></script>
 </head>
 
 <body>
+<audio autoplay loop>
+ 	<source src="Audio/Intro_Insidious.MP3" type="audio/mp3">
+</audio>
+<div class="backTop">
+	<button id="topID"><img src="Images/icon/backtotop.png" alt="Top"/></button>
+	<span class="bttooltip">Back to Top</span>
+</div>
 <div class="container">
 	<div class="colorHead">
         <div class="Header">
@@ -23,84 +33,163 @@
                 </button>
             </div>
             <div class="control">
-                <a class="register" href="#">
+                <a class="register" href="Register.html">
                     <img src="Images/icon/add.png">Đăng ký
                 </a>
-                <a class="login" href="#">
+                <a class="login" href="Login.html">
                     <img src="Images/icon/login.png">Đăng nhập
                 </a>
             </div>
         </div>
        </div>
     <div class="menu">
-         <ul class="list">
+         <ul class="list" id="menuID">
             <li class="type">
-            <a class="listMenu" href="#">THỂ LOẠI </a>
+            <a class="listMenu" href="OUPhim.html">THỂ LOẠI </a>
                 <ul class="listItem">
-                    <li><a href="#">Võ Thuật-Cổ Trang</a></li>
-                    <li><a href="#">Hành Động</a></li>
-                    <li><a href="#">Tình Cảm</a></li>
-                    <li><a href="#">Hoạt Hình</a></li>
-                    <li><a href="#">Hài Hước</a></li>  
-                    <li><a href="#">Tâm Lý 18+</a></li>
+                    <li><a href="OUPhim.html">Võ Thuật-Cổ Trang</a></li>
+                    <li><a href="OUPhim.html">Hành Động</a></li>
+                    <li><a href="OUPhim.html">Tình Cảm</a></li>
+                    <li><a href="OUPhim.html">Hoạt Hình</a></li>
+                    <li><a href="OUPhim.html">Hài Hước</a></li>  
+                    <li><a href="OUPhim.html">Tâm Lý 18+</a></li>
                 </ul>
             </li>
             <li class="country">
-                <a class="listMenu" href="#">QUỐC GIA</a>
+                <a class="listMenu" href="OUPhim.html">QUỐC GIA</a>
                 <ul class="listItem">
-                    <li><a href="#">Việt Nam</a></li>
-                    <li><a href="#">Hồng Kông</a></li>
-                    <li><a href="#">Ấn Độ</a></li>
-                    <li><a href="#">Trung Quốc</a></li>
-                    <li><a href="#">Thái Lan</a></li>  
-                    <li><a href="#">Âu-Mỹ</a></li>
-                    <li><a href="#">Hàn Quốc</a></li>  
-                    <li><a href="#">Quốc gia khác</a></li>
+                    <li><a href="OUPhim.html">Việt Nam</a></li>
+                    <li><a href="OUPhim.html">Hồng Kông</a></li>
+                    <li><a href="OUPhim.html">Ấn Độ</a></li>
+                    <li><a href="OUPhim.html">Trung Quốc</a></li>
+                    <li><a href="OUPhim.html">Thái Lan</a></li>  
+                    <li><a href="OUPhim.html">Âu-Mỹ</a></li>
+                    <li><a href="OUPhim.html">Hàn Quốc</a></li>  
+                    <li><a href="OUPhim.html">Quốc gia khác</a></li>
                </ul>
             </li>
             <li class="phim-le">
-                <a class="listMenu" href="#">PHIM LẺ</a>
+                <a class="listMenu" href="OUPhim.html">PHIM LẺ</a>
                 <ul class="listItem">
-                    <li><a href="#">Phim lẻ Việt Nam</a></li>
-                    <li><a href="#">Phim lẻ Hồng Kông</a></li>
-                    <li><a href="#">Phim lẻ Ấn Độ</a></li>
-                    <li><a href="#">Phim lẻ Trung Quốc</a></li>
-                    <li><a href="#">Phim lẻ Thái Lan</a></li>  
-                    <li><a href="#">Phim lẻ Âu-Mỹ</a></li>
-                    <li><a href="#">Phim lẻ Hàn Quốc</a></li>  
-                    <li><a href="#">Phim lẻ Quốc gia khác</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Việt Nam</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Hồng Kông</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Ấn Độ</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Trung Quốc</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Thái Lan</a></li>  
+                    <li><a href="OUPhim.html">Phim lẻ Âu-Mỹ</a></li>
+                    <li><a href="OUPhim.html">Phim lẻ Hàn Quốc</a></li>  
+                    <li><a href="OUPhim.html">Phim lẻ Quốc gia khác</a></li>
                </ul>
             </li>
             <li class="phim-bo">
-                <a class="listMenu" href="#">PHIM BỘ</a>
+                <a class="listMenu" href="OUPhim.html">PHIM BỘ</a>
                 <ul class="listItem">
-                    <li><a href="#">Phim bộ Việt Nam</a></li>
-                    <li><a href="#">Phim bộ Hồng Kông</a></li>
-                    <li><a href="#">Phim bộ Ấn Độ</a></li>
-                    <li><a href="#">Phim bộ Trung Quốc</a></li>
-                    <li><a href="#">Phim bộ Thái Lan</a></li>  
-                    <li><a href="#">Phim bộ Âu-Mỹ</a></li>
-                    <li><a href="#">Phim bộ Hàn Quốc</a></li>  
-                    <li><a href="#">Phim bộ Quốc gia khác</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Việt Nam</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Hồng Kông</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Ấn Độ</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Trung Quốc</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Thái Lan</a></li>  
+                    <li><a href="OUPhim.html">Phim bộ Âu-Mỹ</a></li>
+                    <li><a href="OUPhim.html">Phim bộ Hàn Quốc</a></li>  
+                    <li><a href="OUPhim.html">Phim bộ Quốc gia khác</a></li>
                </ul>
             </li>
-           <li class="sub"><a class="listMenu" href="#">PHIM THUYẾT MINH</a></li>
-           <li class="cinema"><a class="listMenu" href="#">PHIM CHIẾU RẠP</a></li>
+           <li class="sub"><a class="listMenu" href="OUPhim.html">PHIM THUYẾT MINH</a></li>
+           <li class="cinema"><a class="listMenu" href="OUPhim.html">PHIM CHIẾU RẠP</a></li>
          </ul>
 	</div>
     <div class="ads">
-        <div class="ads-left">liên hệ quảng cáo</div>
-        <div class="ads-right">liên hệ quảng cáo</div>
+        <div class="ads-left" id="adsIDleft">liên hệ quảng cáo</div>
+        <div class="ads-right" id="adsIDright">liên hệ quảng cáo</div>
     </div>
     <div class="body">
-    	
-        
-        
-        
-        
-        
-        
-        
+    	<div class = "FilmContent">
+        	<div class="path">
+        	<ul>
+                <li><a href="OUPhim.html">Trang chủ</a></li>
+                <li><a href="#">IT</a></li>
+            </ul>
+        	</div>
+            <hr>
+            <div class="content">
+            	<div class = "poster">
+                	<a href="#"><img src="Images/Film/poster/IT-poster.png" alt="IT.jpg"/></a>
+                    <ul class="center">
+                    	<li>
+                        	<a class ="down" href="https://api.bilutv.com/test/play.php?q=U2FsdGVkX19dKQTg5hUrIQeP0VoNmLlCPWYIaN2iT1%2FQT96QQwamYHyfE9yNerbtZ0T87WVl9gTdBGeETA%2BRZ0omfo9Q%2FJg%2BRSCEwOTMpvb7pP%2FPkzdvxlwRuYytpgZXPTgNj0pcMHGT9JDjUMLFIp%2BA%2B48Hzt4Du0R1Xkd5v8U%3D">
+                            	<img src="Images/icon/taiphim.png" alt="taiphim.img"/>
+                            </a>
+                        </li>
+                        <li>
+                        	<a class ="play" href="FilmLoad.html">
+                            	<img src="Images/icon/xemphim.png" alt="xemphim.img"/>
+                            </a> 
+                        </li>
+                	</ul>
+                </div>
+                <div class="describe">
+                	<h1 style="color:#FC0;">IT(2017)</h1>
+                    <h2>Chú Hề Ma Quái</h2>
+                    <ul class="meta-data">
+                    	<li>
+                        	<label>Đang phát: </label>
+                            <strong style="color:#C00">HD vietsub + thuyết minh</strong>
+                        </li>
+                        <li>
+                        	<label>Đạo diễn: </label>
+                            <strong> Andrés Muschietti</strong>
+                        </li>
+                        <li>
+                        	<label>Diễn viên: </label>
+                            <strong>Jaeden Lieberher, Finn Wolfhard, Nicholas Hamilton, Bill Skarsgård</strong>
+                        </li>
+                        <li>
+                        	<label>Thể loại: </label>
+                            <strong>Kinh dị-ma,</strong><strong>Chiếu rạp</strong>
+                        </li>
+                        <li>
+                        	<label>Quốc gia: </label>
+                            <strong>Âu-Mỹ</strong>
+                        </li>
+                        <li>
+                        	<label>Thời lượng: </label>
+                            <span>135 phút</span>
+                        </li>
+                        <li>
+                        	<label>Lược xem: </label>
+                            <spang>8.624</span>
+                        </li>
+                        <li>
+                        	<label>Năm sản xuất: </label>
+                            <span>2017</span>
+                        </li>
+                        <li>
+                        	<label>Đăng bởi: </label>
+                            <strong>NVT</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="FilmContent-footer">
+            	<div class="sumaries">
+                	<div class ="decoration-topic">
+                    	<h2>Nội dung film</h2>
+                        <h4 >Lấy bối cảnh tại một thị trấn giả tưởng nằm tại Derry, Maine, Hoa Kỳ, nơi mà có 7 đứa trẻ hay bị ức hiếp tự lập thành một nhóm gọi là The Loser Club. Tại cánh đồng hoang, những đứa trẻ bỗng nhiên bị mất tích từng đứa từng đứa một cách khó hiểu, chỉ để lại vết máu. Hắn ta đã mang đến sự chết chóc cho thị trấn Derry trong hàng chục năm qua, có mặt ở khắp mọi nơi và liên tục khủng bố tinh thần lũ trẻ, những đứa trẻ này bị một con quỷ dữ đội lốt chú hề mang tên Pennywise ám ảnh.</h4>
+                        <img src="Images/Film/background/IT-content1.jpg"/>
+                        <img src="Images/Film/background/IT-content4.jpg"/>
+                        <img src="Images/Film/background/IT-content3.jpg"/>
+                    </div>
+                    <div class="trailer"><h2>Trailer</h2></div>
+                    <div style ="margin:10px auto" class = "video">
+                		<iframe width="100%" height="400" src="https://www.youtube.com/embed/7no56Zw1e20" frameborder="0" allowfullscreen></iframe>
+               		</div>
+                    <div class="tag" style="margin-top:10px;">
+                		<h2>Tags</h2>
+                    	<strong style="margin-left:30px; word-spacing:3px;" >IT, IT Thuyết Minh, IT Full HD, IT 2017, IT bản đẹp, IT: phụ đề xem phim, IT: Chú hề ma quái, IT: Chú hề ma quái Vietsub, IT: Chú hề ma quái Full HD, IT: Chú hề ma quái 2017, IT: Chú hề ma quái thuyết minh, IT: Chú hề ma quái trọn bộ </strong>
+                	</div>
+                </div> <!-- end of sumaries-->
+            </div>
+        </div>
     </div>
     <div class="footer">
         <div class="gioi-thieu">

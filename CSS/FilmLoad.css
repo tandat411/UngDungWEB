@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS BODY */
+div.body{
+	height:auto;
+}
+div.path{
+	overflow:hidden;
+	font-size:20px;
+}
+div.path li{
+	position:relative;
+	float:left;
+	background-color:black;
+	padding:0;
+}
+div.path li:last-child{
+	text-decoration:underline;
+}
+div.path li > a{
+	line-height:40px;
+	padding:10px 45px;
+}
+div.path a:before{
+	content:" ";
+	border:20px solid transparent;
+	border-left:25px solid white;
+	position:absolute;
+	left:100%;
+	margin-left:1px;
+	z-index:1;
+}
+div.path a:after{
+	content:" ";
+	display:block;
+	border:20px solid transparent;
+	border-left:25px solid black;
+	position:absolute;
+	top:0;
+	left:100%;
+	z-index:2;
+}
+div.path a:hover::after{
+	border-left:25px solid #333333;
+}
+div.path a:hover{
+	color:#06C;
+	background-color:#333333;
+}
+div.film{
+	background-color:black;
+	text-align:center;
+}
+div.film > video{
+	width:99%;
+	height:480px;
+}
+div.film h1 a{
+	color:#FC3;
+}
+div.film h1 a:hover{
+	color:#F33;	
+	text-decoration:underline;
+}
+div.server{
+	height:50px;
+	margin-top:5px;
+	background-color:black;
+}
+div.server img{
+	width:20px;
+	height:12px;
+	padding-left:17px;
+}
+div.server span{
+	line-height:50px;
+}
+div.server a{
+	border-radius:5px;
+	font-weight:bold;
+	background-color:#039;
+	margin-left:20px;
+	padding:10px;
+	line-height:50px;
+}
+div.server a:hover{
+	text-decoration:underline;
+}
+div.comment{
+	background-color:black;
+}
+div.comment h2{
+	color:#FC0;
+	padding:5px;
+}
+div.comment #write{
+	margin-left:5px;
+	width:98%;
+	height:200px;
+	font-size:18px;
+}
+div.comment #send{
+	margin: 5px 5px;
+	padding:10px 20px;
+	background-color:#06C;
+	color:#FFF;
+	font-weight:bold;
+	border-radius:10px;
+}
+div.comment #send:hover{
+	background-color:#06F;
+}

@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Login*/
+div.body{
+	width:70%;
+	height:375px;
+	margin: 0 auto;
+	color:#FFF;
+}
+
+div.body > div.login{
+	width: 50%;
+	height:300px;
+	background-color:#93F;
+	border-radius:5px;
+	margin: 0 auto;
+}
+div.path{
+	overflow:hidden;
+	font-size:20px;
+}
+div.path li{
+	position:relative;
+	float:left;
+	background-color:black;
+	padding:0;
+}
+div.path li > a{
+	line-height:40px;
+	padding:10px 45px;
+}
+div.path li:last-child{
+	text-decoration:underline;
+}
+div.path a:before{
+	content:" ";
+	border:20px solid transparent;
+	border-left:25px solid white;
+	position:absolute;
+	left:100%;
+	margin-left:1px;
+	z-index:1;
+}
+div.path a:after{
+	content:" ";
+	display:block;
+	border:20px solid transparent;
+	border-left:25px solid black;
+	position:absolute;
+	top:0;
+	left:100%;
+	z-index:2;
+}
+div.path a:hover::after{
+	border-left:25px solid #333333;
+}
+div.path a:hover{
+	color:#06C;
+	background-color:#333333;
+}
+div.login-content1 > span, div.login-content2 > span{
+	margin-left:5px;	
+}
+div.login-content0 > a > img{
+	width:210px;
+	height:40px;
+	line-height:50px;
+	margin: 10px 85px;	
+}
+div.login-content2{
+	margin-top:5px;	
+}
+div.login-footer{
+	padding:5px 35px;
+	margin: 10px 50px;	
+}
+div.login-footer > h5{
+	margin-top:5px;
+	font-size:16px;
+}
+div.login-footer > input{
+	background:linear-gradient(#CCC, #FC0);
+	border:1px solid #006;
+	border-radius: 5px;
+	padding:5px 1px;
+	margin-right:10px;
+	font-size:13px;
+	font-weight:bold;
+	width:100px;
+}
+div.login-footer > input:hover{
+	box-shadow: 2px 2px 10px #000;	
+}
+div.login-content2 > input#MauKhauID{
+	height:25px;
+	width:210px;
+	margin-left:5px;
+}
+div.login-content1 > input#TaiKhoanID{
+	height:25px;
+	width:210px;
+	margin-left:5px;	
+}
+div.login-content2 > input#btChecked{
+	margin-left:20px;
+	margin-top:15px;
+}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* Form */
+div.body{
+	width:70%;
+	height:600px;
+	margin:0 auto;
+	color:white;
+}
+div.form-content0 > a > img{
+	margin-left:150px;	
+}
+div.body > div.form{
+	width:70%;
+	height:600px;	
+	background:#93F;
+	margin:0 auto;
+	margin-top:15px;
+}
+div.path{
+	overflow:hidden;
+	font-size:20px;
+}
+div.path li{
+	position:relative;
+	float:left;
+	background-color:black;
+	padding:0;
+}
+div.path li:last-child{
+	text-decoration:underline;
+}
+div.path li > a{
+	line-height:40px;
+	padding:10px 45px;
+}
+div.path a:before{
+	content:" ";
+	border:20px solid transparent;
+	border-left:25px solid white;
+	position:absolute;
+	left:100%;
+	margin-left:1px;
+	z-index:1;
+}
+div.path a:after{
+	content:" ";
+	display:block;
+	border:20px solid transparent;
+	border-left:25px solid black;
+	position:absolute;
+	top:0;
+	left:100%;
+	z-index:2;
+}
+div.path a:hover::after{
+	border-left:25px solid #333333;
+}
+div.path a:hover{
+	color:#06C;
+	background-color:#333333;
+}
+div.form-content > div.form- > span{
+	margin:0;
+	width:180px;
+	text-align:center;
+	line-height:34px;
+	padding-left:10px;
+}
+
+div.form-content> div.form-{
+	height:35px;
+	margin:5px;	
+}
+div.form-content> div.form- > input{
+	height:25px;
+	width: 210px;
+}
+
+div.form-footer > input{
+	background:linear-gradient(#CCC, #FC0);
+	border:1px solid #006;
+	border-radius: 5px;
+	width:210px;
+	height:40px;
+	font-size:22px;
+	margin:10px 150px;	
+	font-weight:bold;
+}
+div.form-footer > h4{
+	margin: 10px;	
+}
+div.form-footer > input:hover{
+	box-shadow: 2px 2px 10px #000;
+}
+

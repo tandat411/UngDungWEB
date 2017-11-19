@@ -1,5 +1,6 @@
 // JavaScript Document
 $(document).ready(function() {
+	//slide Image
     $("ul#sliderID >li").hide();
 	$("ul#sliderID > li:first").show();
 	setInterval(function() {
